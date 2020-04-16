@@ -187,7 +187,7 @@ const Desc = styled.p`
   color: white;
   max-width: 700px;
   margin-left: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   @media screen and (max-width: 809px) {
     margin-right: 20px;
   }
@@ -199,6 +199,7 @@ const Strip = styled.div`
   display: flex;
   justify-content: flex-end;
   margin: 0;
+  margin-top: 10px;
   padding: 0;
   opacity: 0;
   @media screen and (max-width: 1350px) {
