@@ -60,9 +60,9 @@ class App extends Component {
     const { devs, selected } = this.state;
     return (
       <Container>
-        <Hero selected={this.state.selected}>
+        <Hero selected={selected}>
           <Logo src={CN} />
-          <Title selected={this.state.selected}>
+          <Title selected={selected}>
             Junior Developers <span style={{ color: "#F5B32E" }}>: </span>Chester Master Course
           </Title>
         </Hero>
