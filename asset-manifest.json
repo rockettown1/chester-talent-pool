@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/devdisplay/static/css/main.793c6ab0.chunk.css",
+    "main.js": "/devdisplay/static/js/main.4371ca7a.chunk.js",
+    "main.js.map": "/devdisplay/static/js/main.4371ca7a.chunk.js.map",
+    "runtime-main.js": "/devdisplay/static/js/runtime-main.fe82374d.js",
+    "runtime-main.js.map": "/devdisplay/static/js/runtime-main.fe82374d.js.map",
+    "static/js/2.86e39950.chunk.js": "/devdisplay/static/js/2.86e39950.chunk.js",
+    "static/js/2.86e39950.chunk.js.map": "/devdisplay/static/js/2.86e39950.chunk.js.map",
+    "index.html": "/devdisplay/index.html",
+    "precache-manifest.3cbe9140e57dbe5da8ce78dd86b59087.js": "/devdisplay/precache-manifest.3cbe9140e57dbe5da8ce78dd86b59087.js",
+    "service-worker.js": "/devdisplay/service-worker.js",
+    "static/css/main.793c6ab0.chunk.css.map": "/devdisplay/static/css/main.793c6ab0.chunk.css.map",
+    "static/js/2.86e39950.chunk.js.LICENSE.txt": "/devdisplay/static/js/2.86e39950.chunk.js.LICENSE.txt",
+    "static/media/GaMingChan.jpg": "/devdisplay/static/media/GaMingChan.ba18ae4c.jpg",
+    "static/media/Matt.jpg": "/devdisplay/static/media/Matt.5fc39602.jpg",
+    "static/media/Mike.jpg": "/devdisplay/static/media/Mike.58995acc.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fe82374d.js",
+    "static/js/2.86e39950.chunk.js",
+    "static/css/main.793c6ab0.chunk.css",
+    "static/js/main.4371ca7a.chunk.js"
+  ]
+}
