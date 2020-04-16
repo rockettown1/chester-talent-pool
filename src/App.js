@@ -88,8 +88,9 @@ export default App;
 
 const Container = styled.div`
   background-color: #282c34;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
+  margin-bottom: 100px;
 `;
 
 const Hero = styled.div`
@@ -137,9 +138,6 @@ const Avatars = styled.div`
   /* justify-content: center; */
   overflow: auto;
   white-space: nowrap;
-  scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(300px);
-  scroll-snap-type: y mandatory;
 `;
 
 const Avatar = styled.div`
