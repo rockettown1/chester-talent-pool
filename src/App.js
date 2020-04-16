@@ -16,6 +16,7 @@ class App extends Component {
   state = {
     selected: null,
     ref: createRef(),
+    showBack: false,
     devs: [
       { name: "Ga Ming Chan", pic: GaMing, selected: false },
       { name: "Jenny Collings", pic: Jenny, selected: false },
@@ -28,11 +29,25 @@ class App extends Component {
   };
 
   scrollRight = () => {
-    this.state.ref.current.scrollLeft += 200;
+    const tempScroll = this.state.ref;
+    tempScroll.current.scrollLeft += 200;
+    this.setState({ ref: tempScroll });
   };
   scrollLeft = () => {
-    this.state.ref.current.scrollLeft -= 200;
+    const tempScroll = this.state.ref;
+    tempScroll.current.scrollLeft -= 200;
+    this.setState({ ref: tempScroll });
   };
+
+  componentDidMount() {
+    this.state.ref.current.addEventListener("scroll", () => {
+      if (!this.state.showBack && this.state.ref.current.scrollLeft > 50) {
+        this.setState({ showBack: true });
+      } else if (this.state.showBack && this.state.ref.current.scrollLeft <= 50) {
+        this.setState({ showBack: false });
+      }
+    });
+  }
 
   handleSelected = (index) => {
     const temp = [...this.state.devs];
@@ -45,9 +60,9 @@ class App extends Component {
     const { devs, selected } = this.state;
     return (
       <Container>
-        <Hero>
+        <Hero selected={this.state.selected}>
           <Logo src={CN} />
-          <Title>
+          <Title selected={this.state.selected}>
             Junior Developers <span style={{ color: "#F5B32E" }}>: </span>Chester Master Course
           </Title>
         </Hero>
@@ -66,16 +81,22 @@ class App extends Component {
         </Avatars>
         <Strip>
           <img
-            style={{ height: "20px", width: "auto", margin: "0 10px 0 0" }}
+            style={{ height: "20px", width: "auto", margin: "0 10px 0 20px", opacity: this.state.showBack ? "1" : "0" }}
             src={Back}
             onClick={() => this.scrollLeft()}
           />
-          <Scroll>Scroll</Scroll>
-          <img
-            style={{ height: "20px", width: "auto", margin: "0 30px 0 10px" }}
-            src={Arrow}
-            onClick={() => this.scrollRight()}
-          />
+          <LeftScroll>
+            <Scroll>Scroll</Scroll>
+            <img
+              style={{
+                height: "20px",
+                width: "auto",
+                margin: "0 30px 0 10px",
+              }}
+              src={Arrow}
+              onClick={() => this.scrollRight()}
+            />
+          </LeftScroll>
         </Strip>
         {this.state.selected != null ? <Name>{devs[selected].name}</Name> : <Name>Please select a developer</Name>}
         {this.state.selected != null && <Desc>{content[this.state.selected]}</Desc>}
@@ -95,13 +116,15 @@ const Container = styled.div`
 
 const Hero = styled.div`
   width: 100%;
-  height: 200px;
+  height: ${({ selected }) => (selected != null ? "100px" : "200px")};
   display: flex;
+  transition: all 1s;
   justify-content: space-between;
   @media screen and (max-width: 809px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 200px;
   }
 `;
 
@@ -117,7 +140,8 @@ const Logo = styled.img`
 
 const Title = styled.h1`
   color: white;
-  font-size: 3em;
+  transition: all 1s;
+  font-size: ${({ selected }) => (selected != null ? "2em" : "3em")};
   width: 50%;
   text-align: right;
   margin-right: 30px;
@@ -195,7 +219,7 @@ const Strip = styled.div`
   height: 20px;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin: 0;
   margin-top: 10px;
   padding: 0;
@@ -209,4 +233,8 @@ const Scroll = styled.p`
   color: white;
   margin: 0;
   padding: 0;
+`;
+
+const LeftScroll = styled.div`
+  display: flex;
 `;
