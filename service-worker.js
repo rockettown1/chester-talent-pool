@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/chester-talent-pool/precache-manifest.4c8b907bff98d2bd6d57e4e64c0b4b21.js"
+  "/chester-talent-pool/precache-manifest.c05a3ca0df9da15b7923cc488d66fd10.js"
 );
 
 self.addEventListener('message', (event) => {
