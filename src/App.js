@@ -99,7 +99,11 @@ class App extends Component {
             />
           </LeftScroll>
         </Strip>
-        {selected != null ? <Name>{devs[selected].name}</Name> : <Name>Please select a developer</Name>}
+        {selected != null ? (
+          <Name>{devs[selected].name}</Name>
+        ) : (
+          <Name>Please select a developer to find out more...</Name>
+        )}
         {selected != null && <Desc>{content[selected]}</Desc>}
       </Container>
     );
