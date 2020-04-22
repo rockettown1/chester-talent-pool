@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/devdisplay/static/css/main.793c6ab0.chunk.css",
-    "main.js": "/devdisplay/static/js/main.6acbcf6c.chunk.js",
-    "main.js.map": "/devdisplay/static/js/main.6acbcf6c.chunk.js.map",
-    "runtime-main.js": "/devdisplay/static/js/runtime-main.fe82374d.js",
-    "runtime-main.js.map": "/devdisplay/static/js/runtime-main.fe82374d.js.map",
-    "static/js/2.689a17a2.chunk.js": "/devdisplay/static/js/2.689a17a2.chunk.js",
-    "static/js/2.689a17a2.chunk.js.map": "/devdisplay/static/js/2.689a17a2.chunk.js.map",
-    "index.html": "/devdisplay/index.html",
-    "precache-manifest.fa5d27a44d4731b2241ff4b0a0c60cd9.js": "/devdisplay/precache-manifest.fa5d27a44d4731b2241ff4b0a0c60cd9.js",
-    "service-worker.js": "/devdisplay/service-worker.js",
-    "static/css/main.793c6ab0.chunk.css.map": "/devdisplay/static/css/main.793c6ab0.chunk.css.map",
-    "static/js/2.689a17a2.chunk.js.LICENSE.txt": "/devdisplay/static/js/2.689a17a2.chunk.js.LICENSE.txt",
-    "static/media/GaMingChan.jpg": "/devdisplay/static/media/GaMingChan.ba18ae4c.jpg",
-    "static/media/Matt.jpg": "/devdisplay/static/media/Matt.5fc39602.jpg",
-    "static/media/Mike.jpg": "/devdisplay/static/media/Mike.58995acc.jpg",
-    "static/media/liam.jpg": "/devdisplay/static/media/liam.76322284.jpg"
+    "main.css": "/chester-talent-pool/static/css/main.793c6ab0.chunk.css",
+    "main.js": "/chester-talent-pool/static/js/main.805ff7aa.chunk.js",
+    "main.js.map": "/chester-talent-pool/static/js/main.805ff7aa.chunk.js.map",
+    "runtime-main.js": "/chester-talent-pool/static/js/runtime-main.e05e1170.js",
+    "runtime-main.js.map": "/chester-talent-pool/static/js/runtime-main.e05e1170.js.map",
+    "static/js/2.c54a7231.chunk.js": "/chester-talent-pool/static/js/2.c54a7231.chunk.js",
+    "static/js/2.c54a7231.chunk.js.map": "/chester-talent-pool/static/js/2.c54a7231.chunk.js.map",
+    "index.html": "/chester-talent-pool/index.html",
+    "precache-manifest.3d3b9c32abaca0ddb923f05883bae7cb.js": "/chester-talent-pool/precache-manifest.3d3b9c32abaca0ddb923f05883bae7cb.js",
+    "service-worker.js": "/chester-talent-pool/service-worker.js",
+    "static/css/main.793c6ab0.chunk.css.map": "/chester-talent-pool/static/css/main.793c6ab0.chunk.css.map",
+    "static/js/2.c54a7231.chunk.js.LICENSE.txt": "/chester-talent-pool/static/js/2.c54a7231.chunk.js.LICENSE.txt",
+    "static/media/GaMingChan.jpg": "/chester-talent-pool/static/media/GaMingChan.ba18ae4c.jpg",
+    "static/media/Matt.jpg": "/chester-talent-pool/static/media/Matt.5fc39602.jpg",
+    "static/media/Mike.jpg": "/chester-talent-pool/static/media/Mike.58995acc.jpg",
+    "static/media/liam.jpg": "/chester-talent-pool/static/media/liam.76322284.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.fe82374d.js",
-    "static/js/2.689a17a2.chunk.js",
+    "static/js/runtime-main.e05e1170.js",
+    "static/js/2.c54a7231.chunk.js",
     "static/css/main.793c6ab0.chunk.css",
-    "static/js/main.6acbcf6c.chunk.js"
+    "static/js/main.805ff7aa.chunk.js"
   ]
 }
