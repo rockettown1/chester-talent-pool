@@ -24,7 +24,6 @@ class App extends Component {
       { name: "Michael Clare", pic: Mike, selected: false },
       { name: "John Muir", pic: John, selected: false },
       { name: "Matthew Edge", pic: Matt, selected: false },
-      { name: "Ross Burrows", pic: Ava, selected: false },
       { name: "Liam Southall", pic: Liam, selected: false },
     ],
   };
