@@ -5,6 +5,7 @@ import Jenny from "./assets/Jenny.jpg";
 import Mike from "./assets/Mike.jpg";
 import John from "./assets/JohnM.jpg";
 import Matt from "./assets/Matt.jpg";
+import Liam from "./assets/liam.jpg";
 import Ava from "./assets/avatar-default.jpg";
 import CN from "./assets/vle-codenation-logo-white-300x47.png";
 import Arrow from "./assets/arr.png";
@@ -24,7 +25,7 @@ class App extends Component {
       { name: "John Muir", pic: John, selected: false },
       { name: "Matthew Edge", pic: Matt, selected: false },
       { name: "Ross Burrows", pic: Ava, selected: false },
-      { name: "Liam Southall", pic: Ava, selected: false },
+      { name: "Liam Southall", pic: Liam, selected: false },
     ],
   };
 
@@ -63,7 +64,7 @@ class App extends Component {
         <Hero selected={selected}>
           <Logo src={CN} />
           <Title selected={selected}>
-            Junior Developers <span style={{ color: "#F5B32E" }}>: </span>Chester Master Course
+            Junior Developers <span style={{ color: "#F5B32E" }}>: </span>Chester Talent Pool
           </Title>
         </Hero>
         <Avatars ref={this.state.ref}>
