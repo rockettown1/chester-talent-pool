@@ -2,7 +2,7 @@
   "name": "dev-display",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rockettown1.github.io/devdisplay/",
+  "homepage": "https://rockettown1.github.io/chester-talent-pool/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
