@@ -10,6 +10,8 @@ import Ava from "./assets/avatar-default.jpg";
 import CN from "./assets/vle-codenation-logo-white-300x47.png";
 import Arrow from "./assets/arr.png";
 import Back from "./assets/back.png";
+import Git from "./assets/github.svg";
+import LI from "./assets/linkedin.svg";
 import "./App.css";
 import { content } from "./content/content";
 
@@ -19,12 +21,48 @@ class App extends Component {
     ref: createRef(),
     showBack: false,
     devs: [
-      { name: "Ga Ming Chan", pic: GaMing, selected: false },
-      { name: "Jenny Collings", pic: Jenny, selected: false },
-      { name: "Michael Clare", pic: Mike, selected: false },
-      { name: "John Muir", pic: John, selected: false },
-      { name: "Matthew Edge", pic: Matt, selected: false },
-      { name: "Liam Southall", pic: Liam, selected: false },
+      {
+        name: "Ga Ming Chan",
+        pic: GaMing,
+        selected: false,
+        github: "https://github.com/gxc19?tab=repositories",
+        linkedIn: "https://www.linkedin.com/in/gmchan19/",
+      },
+      {
+        name: "Jenny Collings",
+        pic: Jenny,
+        selected: false,
+        github: "https://github.com/jenny33141?tab=repositories",
+        linkedIn: "https://www.linkedin.com/in/jenny-collings-95a684199",
+      },
+      {
+        name: "Michael Clare",
+        pic: Mike,
+        selected: false,
+        github: "https://github.com/mclarework?tab=repositories",
+        linkedIn: "https://www.linkedin.com/in/mike-clare/",
+      },
+      {
+        name: "John Muir",
+        pic: John,
+        selected: false,
+        github: "https://github.com/johnmuir2001?tab=repositories",
+        linkedIn: "https://www.linkedin.com/in/john-muir-118ab11a2/",
+      },
+      {
+        name: "Matthew Edge",
+        pic: Matt,
+        selected: false,
+        github: "https://github.com/mjedg3?tab=repositories",
+        linkedIn: "https://www.linkedin.com/in/matthew-james-edge/",
+      },
+      {
+        name: "Liam Southall",
+        pic: Liam,
+        selected: false,
+        github: "https://github.com/liamsouthall?tab=repositories",
+        linkedIn: "https://www.linkedin.com/in/liam-southall-2919031a2/",
+      },
     ],
   };
 
@@ -103,7 +141,17 @@ class App extends Component {
         ) : (
           <Name>Please select a developer to find out more...</Name>
         )}
-        {selected != null && <Desc>{content[selected]}</Desc>}
+        {selected != null && (
+          <div>
+            <Github href={devs[selected].github}>
+              <Icon src={Git} />
+            </Github>
+            <LinkedIn href={devs[selected].linkedIn}>
+              <Icon src={LI} />
+            </LinkedIn>
+            <Desc>{content[selected]}</Desc>
+          </div>
+        )}
       </Container>
     );
   }
@@ -241,4 +289,14 @@ const Scroll = styled.p`
 
 const LeftScroll = styled.div`
   display: flex;
+`;
+
+const Github = styled.a``;
+
+const LinkedIn = styled.a``;
+
+const Icon = styled.img`
+  height: 30px;
+  width: auto;
+  margin-left: 20px;
 `;
