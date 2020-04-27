@@ -1,26 +1,28 @@
 {
   "files": {
     "main.css": "/chester-talent-pool/static/css/main.793c6ab0.chunk.css",
-    "main.js": "/chester-talent-pool/static/js/main.fc35529e.chunk.js",
-    "main.js.map": "/chester-talent-pool/static/js/main.fc35529e.chunk.js.map",
+    "main.js": "/chester-talent-pool/static/js/main.88b5444a.chunk.js",
+    "main.js.map": "/chester-talent-pool/static/js/main.88b5444a.chunk.js.map",
     "runtime-main.js": "/chester-talent-pool/static/js/runtime-main.e05e1170.js",
     "runtime-main.js.map": "/chester-talent-pool/static/js/runtime-main.e05e1170.js.map",
-    "static/js/2.6e013429.chunk.js": "/chester-talent-pool/static/js/2.6e013429.chunk.js",
-    "static/js/2.6e013429.chunk.js.map": "/chester-talent-pool/static/js/2.6e013429.chunk.js.map",
+    "static/js/2.5f017a61.chunk.js": "/chester-talent-pool/static/js/2.5f017a61.chunk.js",
+    "static/js/2.5f017a61.chunk.js.map": "/chester-talent-pool/static/js/2.5f017a61.chunk.js.map",
     "index.html": "/chester-talent-pool/index.html",
-    "precache-manifest.c05a3ca0df9da15b7923cc488d66fd10.js": "/chester-talent-pool/precache-manifest.c05a3ca0df9da15b7923cc488d66fd10.js",
+    "precache-manifest.2a44b6ea752fbc19b2251471c413ff4a.js": "/chester-talent-pool/precache-manifest.2a44b6ea752fbc19b2251471c413ff4a.js",
     "service-worker.js": "/chester-talent-pool/service-worker.js",
     "static/css/main.793c6ab0.chunk.css.map": "/chester-talent-pool/static/css/main.793c6ab0.chunk.css.map",
-    "static/js/2.6e013429.chunk.js.LICENSE.txt": "/chester-talent-pool/static/js/2.6e013429.chunk.js.LICENSE.txt",
+    "static/js/2.5f017a61.chunk.js.LICENSE.txt": "/chester-talent-pool/static/js/2.5f017a61.chunk.js.LICENSE.txt",
     "static/media/GaMingChan.jpg": "/chester-talent-pool/static/media/GaMingChan.ba18ae4c.jpg",
     "static/media/Matt.jpg": "/chester-talent-pool/static/media/Matt.5fc39602.jpg",
     "static/media/Mike.jpg": "/chester-talent-pool/static/media/Mike.58995acc.jpg",
-    "static/media/liam.jpg": "/chester-talent-pool/static/media/liam.76322284.jpg"
+    "static/media/github.svg": "/chester-talent-pool/static/media/github.d896686d.svg",
+    "static/media/liam.jpg": "/chester-talent-pool/static/media/liam.76322284.jpg",
+    "static/media/linkedin.svg": "/chester-talent-pool/static/media/linkedin.ab88cf0a.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e05e1170.js",
-    "static/js/2.6e013429.chunk.js",
+    "static/js/2.5f017a61.chunk.js",
     "static/css/main.793c6ab0.chunk.css",
-    "static/js/main.fc35529e.chunk.js"
+    "static/js/main.88b5444a.chunk.js"
   ]
 }
